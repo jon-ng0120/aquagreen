@@ -6,20 +6,39 @@ import styled from 'styled-components';
 
 const MainDiv = styled.div`
   padding: 0 1.2rem;
+  max-width: 75rem;
+  @media only screen and (min-width: 820px) {
+    margin: auto;
+    display: ${(props) => (props.emptyCart ? '#flex' : 'grid')};
+    grid-template-areas:
+      'cartTitle cartTitle'
+      'itemsDiv totalDiv'
+      'itemsDiv .'
+      'itemsDiv .';
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 0.75fr;
+  }
+`;
+
+const CartTitle = styled.h2`
+  grid-area: cartTitle;
+  font-size: 1.7rem;
 `;
 
 const ItemsContainer = styled.div`
   margin-top: 2rem;
+  grid-area: itemsDiv;
 `;
 
 const TotalDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 2rem;
   border-top: 1px solid #949494;
   padding: 0.5rem 0;
   line-height: 1.6;
+  grid-area: totalDiv;
   & div {
     display: flex;
     justify-content: space-between;
@@ -55,8 +74,18 @@ const CheckoutBtn = styled.button`
   }
 `;
 
+const EmptyBagDiv = styled.div`
+  text-align: center;
+`;
+
+const EmptyBagMessage = styled.h2`
+  margin-top: 15rem;
+  margin-bottom: 1rem;
+`;
+
 const ContinueShopping = styled.button`
   width: 100%;
+  max-width: 992px;
   font-size: 1rem;
   height: 3rem;
   cursor: pointer;
@@ -75,44 +104,56 @@ const Cart = () => {
   const cartItems = cartCtx.items;
   const cartTotal = cartCtx.totalPrice + cartCtx.shipping;
 
-  return (
-    <MainDiv>
-      <h1>My Bag</h1>
-      <ItemsContainer>
-        {cartItems.map((item) => {
-          return (
-            <CartItem
-              item={item}
-              key={item.id}
-              name={item.name}
-              price={item.price}
-              quantity={item.quantity}
-            />
-          );
-        })}
-      </ItemsContainer>
-      <TotalDiv>
-        <div>
-          <p>Bag Total</p>
-          <p>$ {cartCtx.totalPrice}</p>
-        </div>
-        <div>
-          <p>Shipping</p>
-          <p>$ {cartCtx.shipping}</p>
-        </div>
-        <div>
-          <Tax>Tax will be calculated at end of checkout</Tax>
-        </div>
-        <PriceDiv>
-          <p>Total</p>
-          <p>$ {cartTotal.toFixed(2)}</p>
-        </PriceDiv>
-      </TotalDiv>
-      <CheckoutBtn>CHECKOUT</CheckoutBtn>
+  const ContinueShoppingBtn = (
+    <Link to="/catalog?difficulty=&lighting=&position=">
+      <ContinueShopping>CONTINUE SHOPPING</ContinueShopping>
+    </Link>
+  );
 
-      <Link to="/catalog?difficulty=&lighting=&position=">
-        <ContinueShopping>CONTINUE SHOPPING</ContinueShopping>
-      </Link>
+  return (
+    <MainDiv emptyCart={cartItems.length < 1 ? true : false}>
+      <CartTitle>My Bag</CartTitle>
+      {cartItems.length >= 1 ? (
+        <React.Fragment>
+          <ItemsContainer>
+            {cartItems.map((item) => {
+              return (
+                <CartItem
+                  item={item}
+                  key={item.id}
+                  name={item.name}
+                  price={item.price}
+                  quantity={item.quantity}
+                />
+              );
+            })}
+          </ItemsContainer>
+          <TotalDiv>
+            <div>
+              <p>Bag Total</p>
+              <p>$ {cartCtx.totalPrice}</p>
+            </div>
+            <div>
+              <p>Shipping</p>
+              <p>$ {cartCtx.shipping}</p>
+            </div>
+            <div>
+              <Tax>Tax will be calculated at end of checkout</Tax>
+            </div>
+            <PriceDiv>
+              <p>Total</p>
+              <p>$ {cartTotal.toFixed(2)}</p>
+            </PriceDiv>
+            <CheckoutBtn>CHECKOUT</CheckoutBtn>
+            {ContinueShoppingBtn}
+          </TotalDiv>
+        </React.Fragment>
+      ) : (
+        <EmptyBagDiv>
+          <EmptyBagMessage>Your Shopping Bag is Empty</EmptyBagMessage>
+          {ContinueShoppingBtn}
+        </EmptyBagDiv>
+      )}
     </MainDiv>
   );
 };

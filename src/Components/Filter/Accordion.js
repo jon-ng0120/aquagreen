@@ -15,11 +15,8 @@ const FilterTitle = styled.div`
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-
-  & p {
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
+  font-weight: 600;
+  font-size: 1.2rem;
 `;
 
 const FilterList = styled.ul`

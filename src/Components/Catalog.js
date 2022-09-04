@@ -8,7 +8,7 @@ const Container = styled.div`
   /* display: flex; */
   /* flex-direction: column; */
   margin: auto;
-  max-width: 1200px;
+  max-width: 75rem;
   padding: 1.5rem;
 `;
 

@@ -5,12 +5,27 @@ import CartContext from '../store/cart-context';
 
 const MainDiv = styled.div`
   padding: 0 1.2rem;
+  max-width: 70rem;
+  margin: auto;
+
+  @media only screen and (min-width: 992px) {
+    display: grid;
+    grid-template-areas:
+      'imageDiv nameDiv'
+      'imageDiv price'
+      'imageDiv quantityDiv'
+      'imageDiv addCartBtnDiv'
+      'imageDiv descriptionDiv';
+  }
+  grid-template-rows: 5rem 2rem 5rem 3rem 1fr;
+  grid-template-columns: 1fr 1fr;
 `;
 
 const NameDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  grid-area: nameDiv;
   & h2 {
     font-size: 1.5rem;
     font-weight: 500;
@@ -20,7 +35,6 @@ const NameDiv = styled.div`
 const ReviewsDiv = styled.div`
   display: flex;
   justify-content: end;
-  min-width: 40%;
 
   & div {
     display: flex;
@@ -45,10 +59,15 @@ const Star = styled.span`
 const ImageDiv = styled.div`
   text-align: center;
   margin: 1rem 0;
+  grid-area: imageDiv;
   & img {
     max-width: 28rem;
     max-height: 28rem;
     width: 100%;
+    @media only screen and (min-width: 992px) {
+      max-height: 32rem;
+      max-width: 32rem;
+    }
   }
 `;
 
@@ -56,6 +75,7 @@ const Price = styled.p`
   font-size: 1.2rem;
   color: #00781c;
   font-weight: 600;
+  grid-area: price;
 `;
 
 const AddCartBtn = styled.button`
@@ -78,6 +98,7 @@ const QuantityDiv = styled.div`
   align-items: center;
   height: 2.5rem;
   margin: 1rem 0;
+  grid-area: quantityDiv;
   & p {
     margin-top: -0.2rem;
   }
@@ -92,11 +113,17 @@ const QuantityDiv = styled.div`
   }
 `;
 
+const AddCartBtnDiv = styled.div`
+  grid-area: addCartBtnDiv;
+`;
+
 const DescriptionDiv = styled.div`
   margin: 1rem 0;
   padding: 1rem 0;
   border-top: 1px solid #dadada;
   border-bottom: 1px solid #dadada;
+  line-height: 1.5;
+  grid-area: descriptionDiv;
   & h3 {
     margin-bottom: 0.8rem;
   }
@@ -186,9 +213,9 @@ const DetailedCardView = () => {
           <option value="25">25</option>
         </select>
       </QuantityDiv>
-      <div>
+      <AddCartBtnDiv>
         <AddCartBtn onClick={addCartHandler}>ADD TO CART</AddCartBtn>
-      </div>
+      </AddCartBtnDiv>
 
       <DescriptionDiv>
         <h3>Description</h3>
