@@ -39,6 +39,8 @@ const PreviewImage = styled.img`
 
 const Name = styled.p`
   font-weight: 600;
+  margin-top: 0.7rem;
+  margin-bottom: 0.5rem;
 `;
 
 const Card = (props) => {

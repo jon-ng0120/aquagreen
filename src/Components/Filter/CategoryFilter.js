@@ -24,6 +24,7 @@ const FilterMenu = styled.div`
 
   & h2 {
     text-align: center;
+    margin: 1rem 0;
   }
 `;
 
