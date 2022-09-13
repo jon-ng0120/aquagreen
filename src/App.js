@@ -17,14 +17,14 @@ function App() {
           <div className="App">
             <Header />
             <Routes>
-              <Route index element={<Home />} />
-              <Route path="aquagreen" element={<Home />} />
-              <Route path="aquagreen/catalog" element={<Catalog />} />
+              <Route exact path="/aquagreen" element={<Home />} />
+              <Route exact path="aquagreen/catalog" element={<Catalog />} />
               <Route
+                exact
                 path="aquagreen/catalog/:id"
                 element={<DetailedCardView />}
               />
-              <Route path="aquagreen/shopping-bag" element={<Cart />} />
+              <Route exact path="aquagreen/shopping-bag" element={<Cart />} />
             </Routes>
             <Footer />
           </div>
