@@ -2,6 +2,8 @@
 
 A simple dummy stored used that specializes in selling squarium plants
 
+[Live Demo](https://jon-ng0120.github.io/aquagreen/)
+
 ## Getting started
 
 ```
