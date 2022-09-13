@@ -54,7 +54,13 @@ const Header = () => {
   const location = useLocation();
 
   return (
-    <Div homePage={location.pathname == '/' ? true : false}>
+    <Div
+      homePage={
+        location.pathname == '/' || location.pathname == '/aquagreen'
+          ? true
+          : false
+      }
+    >
       <Nav>
         <NavLink
           style={{
@@ -67,15 +73,15 @@ const Header = () => {
         </NavLink>
         <ul>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/aquagreen">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/catalog?difficulty=&lighting=&position=">
+            <NavLink to="aquagreen/catalog?difficulty=&lighting=&position=">
               Shop
             </NavLink>
           </li>
           <li>
-            <NavLink to="/shopping-bag">
+            <NavLink to="aquagreen/shopping-bag">
               <CartIcon />
             </NavLink>
           </li>

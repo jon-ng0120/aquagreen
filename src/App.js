@@ -18,9 +18,13 @@ function App() {
             <Header />
             <Routes>
               <Route index element={<Home />} />
-              <Route path="catalog" element={<Catalog />} />
-              <Route path="catalog/:id" element={<DetailedCardView />} />
-              <Route path="shopping-bag" element={<Cart />} />
+              <Route path="aquagreen" element={<Home />} />
+              <Route path="aquagreen/catalog" element={<Catalog />} />
+              <Route
+                path="aquagreen/catalog/:id"
+                element={<DetailedCardView />}
+              />
+              <Route path="aquagreen/shopping-bag" element={<Cart />} />
             </Routes>
             <Footer />
           </div>
