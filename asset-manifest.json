@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/aquagreen/static/css/main.a2aba4cd.css",
+    "main.js": "/aquagreen/static/js/main.720b3cce.js",
+    "static/js/787.d6fe38e8.chunk.js": "/aquagreen/static/js/787.d6fe38e8.chunk.js",
+    "static/media/landing-image.jpg": "/aquagreen/static/media/landing-image.4ca53b5b951cd3b3d767.jpg",
+    "static/media/dwarf-sagittaria.png": "/aquagreen/static/media/dwarf-sagittaria.73528bd786e80518c3a6.png",
+    "static/media/aponogeton-boivinianus.png": "/aquagreen/static/media/aponogeton-boivinianus.207fc2d13562fd4cf4c7.png",
+    "static/media/red-tiger-lotus.png": "/aquagreen/static/media/red-tiger-lotus.608c6cd2f7d386976006.png",
+    "static/media/java-fern.png": "/aquagreen/static/media/java-fern.5e95ee625de31d00ad0e.png",
+    "static/media/amazon-sword.png": "/aquagreen/static/media/amazon-sword.57d6a452b4fb25e6ee90.png",
+    "static/media/glossostigma-elatinoides.png": "/aquagreen/static/media/glossostigma-elatinoides.664621a56e9c698edaf2.png",
+    "static/media/vallisneria-americana.png": "/aquagreen/static/media/vallisneria-americana.99505568a0917675c3c2.png",
+    "static/media/cryptocoryne-wendtii.png": "/aquagreen/static/media/cryptocoryne-wendtii.b70ea0a9cf56d5021e4b.png",
+    "static/media/pogostemon-stellatus.png": "/aquagreen/static/media/pogostemon-stellatus.b1c52cb62e47bab4f3f0.png",
+    "static/media/alternanthera-reineckii.png": "/aquagreen/static/media/alternanthera-reineckii.da1616e40bd826554f19.png",
+    "static/media/anubias-barteri.png": "/aquagreen/static/media/anubias-barteri.b0ed7895524a1e776ed2.png",
+    "static/media/hemianthus-micranthemoides.png": "/aquagreen/static/media/hemianthus-micranthemoides.456affe598e77178ab86.png",
+    "static/media/staurogyne-repens.png": "/aquagreen/static/media/staurogyne-repens.9b7864fc007b2f3d58d2.png",
+    "index.html": "/aquagreen/index.html",
+    "main.a2aba4cd.css.map": "/aquagreen/static/css/main.a2aba4cd.css.map",
+    "main.720b3cce.js.map": "/aquagreen/static/js/main.720b3cce.js.map",
+    "787.d6fe38e8.chunk.js.map": "/aquagreen/static/js/787.d6fe38e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2aba4cd.css",
+    "static/js/main.720b3cce.js"
+  ]
+}
