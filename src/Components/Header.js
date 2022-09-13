@@ -42,6 +42,7 @@ const Nav = styled.nav`
 const NavLink = styled(Link)`
   text-decoration: none;
   cursor: pointer;
+  color: black;
 
   &:visited {
     color: inherit;
@@ -63,7 +64,7 @@ const Header = () => {
           style={{
             fontSize: '2rem',
           }}
-          to="/"
+          to="/aquagreens"
         >
           <Title>
             <AquaSpan>A</AquaSpan>qua
