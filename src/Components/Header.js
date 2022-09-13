@@ -52,11 +52,12 @@ const GreenSpan = styled.span`
 
 const Header = () => {
   const location = useLocation();
+  console.log(location.pathname);
 
   return (
     <Div
       homePage={
-        location.pathname == '/' || location.pathname == '/aquagreen'
+        location.pathname == '/' || location.pathname == '/aquagreen/'
           ? true
           : false
       }
