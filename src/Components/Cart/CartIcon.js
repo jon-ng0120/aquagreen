@@ -35,7 +35,9 @@ const CartIcon = () => {
       <span className="material-icons" style={{ fontSize: '1.5rem' }}>
         shopping_bag
       </span>
-      <ItemCount>{cartCtx.totalQuantity}</ItemCount>
+      {cartCtx.totalQuantity > 0 && (
+        <ItemCount>{cartCtx.totalQuantity}</ItemCount>
+      )}
     </Div>
   );
 };

@@ -52,7 +52,6 @@ const FilterProvider = (props) => {
 
   const filterContext = {
     addFilterOption: addFilterHandler,
-    // removeFilterOption: removeFilterHandler,
     items:
       currentLocation === '?difficulty=&lighting=&position='
         ? products

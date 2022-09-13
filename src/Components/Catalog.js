@@ -5,8 +5,6 @@ import Card from './Card';
 import CategoryFilter from './Filter/CategoryFilter';
 
 const Container = styled.div`
-  /* display: flex; */
-  /* flex-direction: column; */
   margin: auto;
   max-width: 75rem;
   padding: 1.5rem;
@@ -15,8 +13,7 @@ const Container = styled.div`
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(8rem, 1fr));
-  /* justify-content: center; */
-  margin: 2.5rem auto;
+  margin: 2.5rem auto 10rem 0;
   gap: 1rem;
   @media only screen and (min-width: 600px) {
     grid-template-columns: repeat(3, minmax(11rem, 1fr));

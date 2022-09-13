@@ -7,6 +7,7 @@ import FilterProvider from './store/FilterProvider';
 import DetailedCardView from './Components/DetailedCardView';
 import Header from './Components/Header';
 import Cart from './Components/Cart/Cart';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Route path="catalog/:id" element={<DetailedCardView />} />
               <Route path="shopping-bag" element={<Cart />} />
             </Routes>
+            <Footer />
           </div>
         </FilterProvider>
       </CartProvider>

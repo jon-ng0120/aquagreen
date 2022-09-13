@@ -5,6 +5,7 @@ import CartContext from '../store/cart-context';
 
 const MainDiv = styled.div`
   padding: 0 1.2rem;
+  padding-bottom: 10rem;
   max-width: 70rem;
   margin: auto;
 
@@ -64,6 +65,7 @@ const ImageDiv = styled.div`
     max-width: 28rem;
     max-height: 28rem;
     width: 100%;
+
     @media only screen and (min-width: 992px) {
       max-height: 32rem;
       max-width: 32rem;
@@ -110,6 +112,7 @@ const QuantityDiv = styled.div`
     font-size: 1rem;
     border: 1px solid #ddd;
     margin-left: 1rem;
+    cursor: pointer;
   }
 `;
 
@@ -118,7 +121,7 @@ const AddCartBtnDiv = styled.div`
 `;
 
 const DescriptionDiv = styled.div`
-  margin: 1rem 0;
+  margin-top: 1rem;
   padding: 1rem 0;
   border-top: 1px solid #dadada;
   border-bottom: 1px solid #dadada;

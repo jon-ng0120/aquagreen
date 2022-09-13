@@ -13,10 +13,6 @@ const Div = styled.div`
   color: ${(props) => (props.homePage ? '#efefef' : 'black')};
 `;
 
-const HeaderTitle = styled.a`
-  font-size: 2rem;
-`;
-
 const Nav = styled.nav`
   display: flex;
   width: 100%;
@@ -47,13 +43,28 @@ const NavLink = styled(Link)`
   }
 `;
 
+const AquaSpan = styled.span`
+  color: #189ab4;
+`;
+const GreenSpan = styled.span`
+  color: #0e7835;
+`;
+
 const Header = () => {
   const location = useLocation();
 
   return (
     <Div homePage={location.pathname == '/' ? true : false}>
       <Nav>
-        <HeaderTitle>AquaGreen</HeaderTitle>
+        <NavLink
+          style={{
+            fontSize: '2rem',
+          }}
+          to="/"
+        >
+          <AquaSpan>A</AquaSpan>qua
+          <GreenSpan>G</GreenSpan>reen
+        </NavLink>
         <ul>
           <li>
             <NavLink to="/">Home</NavLink>

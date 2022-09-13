@@ -7,4 +7,6 @@ body {
   font-family: 'Anton', sans-serif;
   font-family: 'Open Sans', sans-serif;
   font-family: 'Rubik', sans-serif;
+  min-height: 100vh;
+  position: relative;
 }

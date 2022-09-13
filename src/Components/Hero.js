@@ -12,7 +12,7 @@ const Banner = styled.div`
   background-position-y: 20%;
   filter: brightness(55%);
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
 `;
 
 const Hero = () => {

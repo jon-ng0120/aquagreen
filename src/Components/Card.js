@@ -44,6 +44,7 @@ const Name = styled.p`
 `;
 
 const Card = (props) => {
+  console.log(props);
   return (
     <Div
       to={`${props.id}`}
