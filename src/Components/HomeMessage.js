@@ -48,7 +48,7 @@ const HomeMessage = () => {
       <SecondMessage>
         Healthy, green, aquatic plants delivered right to you
       </SecondMessage>
-      <Link to="/catalog?difficulty=&lighting=&position=">
+      <Link to="/aquagreen/catalog?difficulty=&lighting=&position=">
         <button>SHOP NOW</button>
       </Link>
     </Div>

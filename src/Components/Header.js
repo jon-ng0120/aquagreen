@@ -1,16 +1,21 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import styled from 'styled-components';
 import CartIcon from './Cart/CartIcon';
 
 const Div = styled.div`
-  height: 5rem;
+  height: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  color: ${(props) => (props.homePage ? '#efefef' : 'black')};
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #404040;
+`;
+
+const Title = styled.div`
+  letter-spacing: 0.4rem;
 `;
 
 const Nav = styled.nav`
@@ -51,16 +56,8 @@ const GreenSpan = styled.span`
 `;
 
 const Header = () => {
-  const location = useLocation();
-
   return (
-    <Div
-      homePage={
-        location.pathname == '/' || location.pathname == '/aquagreen/'
-          ? true
-          : false
-      }
-    >
+    <Div>
       <Nav>
         <NavLink
           style={{
@@ -68,8 +65,10 @@ const Header = () => {
           }}
           to="/"
         >
-          <AquaSpan>A</AquaSpan>qua
-          <GreenSpan>G</GreenSpan>reen
+          <Title>
+            <AquaSpan>A</AquaSpan>qua
+            <GreenSpan>G</GreenSpan>reen
+          </Title>
         </NavLink>
         <ul>
           <li>

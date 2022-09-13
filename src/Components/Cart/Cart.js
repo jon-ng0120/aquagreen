@@ -105,7 +105,7 @@ const Cart = () => {
   const cartTotal = cartCtx.totalPrice + cartCtx.shipping;
 
   const ContinueShoppingBtn = (
-    <Link to="/catalog?difficulty=&lighting=&position=">
+    <Link to="/aquagreen/catalog?difficulty=&lighting=&position=">
       <ContinueShopping>CONTINUE SHOPPING</ContinueShopping>
     </Link>
   );
