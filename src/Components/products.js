@@ -128,7 +128,7 @@ const DUMMY_PRODUCTS = [
     images: ['hemianthus-micranthemoides.png'],
   },
   {
-    id: 11,
+    id: 12,
     name: 'Pogostemon stellatus',
     description: `Pogostemon stellata from Asia and Australia is distinguished by its beautiful shape and colour. Stems from 20-60 cm and up to 10 cm wide. It is difficult to grow in aquariums. It requires intensive light and the addition of CO2 to grow well.
 
@@ -140,7 +140,7 @@ const DUMMY_PRODUCTS = [
     images: ['pogostemon-stellatus.png'],
   },
   {
-    id: 12,
+    id: 13,
     name: 'Aponogeton boivinianus',
     description: `Aponogeton boivinianus is a large, strong plant which is only suitable for large aquariums.
 
