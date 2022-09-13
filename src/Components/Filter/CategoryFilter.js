@@ -38,7 +38,7 @@ const DeleteBtn = styled.span`
 const filterOptions = [
   {
     title: 'difficulty',
-    options: ['beginner', 'intermediate', 'advance'],
+    options: ['beginner', 'intermediate', 'advanced'],
   },
   {
     title: 'lighting',

@@ -104,6 +104,55 @@ const DUMMY_PRODUCTS = [
     position: 'background',
     images: ['vallisneria-americana.png'],
   },
+  {
+    id: 10,
+    name: 'Glossostigma elatinoides',
+    description: `Glossostigma elatinoides from New Zealand is much in demand in Japanese-inspired aquariums. It is one of the smallest aquarium plants (2-3 cm tall), and thus a good foreground plant. 
+    A difficult plant demanding a lot of light. Grows upwards if light is poor. Make sure larger plants do not overshadow it. When planting in the aquarium small clumps (approx. 1/8 pot) should be placed at intervals of a few centimetres to help the plants grow together more quickly. CO2 addition and soft water promote growth significantly. `,
+    price: 8.99,
+    difficulty: 'advanced',
+    lighting: 'high',
+    position: 'foreground',
+    images: ['glossostigma-elatinoides.png'],
+  },
+  {
+    id: 11,
+    name: 'Hemianthus micranthemoides',
+    description: `Hemianthus micranthemoides from North America is a graceful plant whose small, arched leaves make it look like a miniature version of Egeria. It has a characteristic trailing growth in intensive light, so it can be used as a foreground plant (stems from 10-20 cm tall, 2-3 cm wide). A compact group of Hemianthus micranthemoides is very beautiful with its small, light-green leaves.
+    In terrariums the plant forms a compact cushion.
+    Used to be called Micranthemum micranthemoides. `,
+    price: 7.99,
+    difficulty: 'advanced',
+    lighting: 'medium',
+    position: 'foreground',
+    images: ['hemianthus-micranthemoides.png'],
+  },
+  {
+    id: 11,
+    name: 'Pogostemon stellatus',
+    description: `Pogostemon stellata from Asia and Australia is distinguished by its beautiful shape and colour. Stems from 20-60 cm and up to 10 cm wide. It is difficult to grow in aquariums. It requires intensive light and the addition of CO2 to grow well.
+
+    The shortage of micronutrients leads to pale leaves, which may be an indication that the aquarium needs fertiliser. Even in good conditions growth sometimes stops suddenly. Plants in aquarium shops are generally low, compact plants grown in marshy conditions, and do not reveal their full glory until planted in the aquarium.`,
+    price: 10.99,
+    difficulty: 'advanced',
+    lighting: 'high',
+    position: 'background',
+    images: ['pogostemon-stellatus.png'],
+  },
+  {
+    id: 12,
+    name: 'Aponogeton boivinianus',
+    description: `Aponogeton boivinianus is a large, strong plant which is only suitable for large aquariums.
+
+    A bulb plant from Madagascar, whose bulb may be covered with the bottom layer, as long as the sprout tip is at the soil surface. In favourable conditions it can form very large leaves (up to 80 cm long and 8 cm wide, and from 30-50 cm wide). The oldest leaves are deep dark-green, while younger leaves are light-green and sometimes brownish until they are fully developed. Nutrition capsules enhances the growth considerably.
+    
+    In the wild, Aponogeton boivinianus is found in fast-flowing water, and it prefers some flow in the aquarium water. It needs a dormant period when the bulb loses all its leaves, after which the growth will start again. `,
+    price: 12.99,
+    difficulty: 'medium',
+    lighting: 'medium',
+    position: 'background',
+    images: ['aponogeton-boivinianus.png'],
+  },
 ];
 
 export default DUMMY_PRODUCTS;
