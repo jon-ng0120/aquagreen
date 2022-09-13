@@ -9,13 +9,13 @@ const Div = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   background-color: rgba(255, 255, 255, 0.7);
   color: #404040;
 `;
 
 const Title = styled.div`
-  letter-spacing: 0.4rem;
+  /* letter-spacing: 0.4rem; */
 `;
 
 const Nav = styled.nav`
