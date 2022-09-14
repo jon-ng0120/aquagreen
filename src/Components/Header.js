@@ -60,7 +60,7 @@ const Header = () => {
           style={{
             fontSize: '2rem',
           }}
-          to="/aquagreens"
+          to="/aquagreen"
         >
           <AquaSpan>A</AquaSpan>qua
           <GreenSpan>G</GreenSpan>reen
