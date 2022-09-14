@@ -4,8 +4,7 @@ import styled from 'styled-components';
 import CartContext from '../store/cart-context';
 
 const MainDiv = styled.div`
-  padding: 0 1.2rem;
-  padding-bottom: 10rem;
+  padding: 2rem 1.2rem 10rem 1.2rem;
   max-width: 70rem;
   margin: auto;
 

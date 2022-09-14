@@ -14,10 +14,6 @@ const Div = styled.div`
   color: #404040;
 `;
 
-const Title = styled.div`
-  /* letter-spacing: 0.4rem; */
-`;
-
 const Nav = styled.nav`
   display: flex;
   width: 100%;
@@ -66,10 +62,8 @@ const Header = () => {
           }}
           to="/aquagreens"
         >
-          <Title>
-            <AquaSpan>A</AquaSpan>qua
-            <GreenSpan>G</GreenSpan>reen
-          </Title>
+          <AquaSpan>A</AquaSpan>qua
+          <GreenSpan>G</GreenSpan>reen
         </NavLink>
         <ul>
           <li>

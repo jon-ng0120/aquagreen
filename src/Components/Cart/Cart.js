@@ -6,7 +6,10 @@ import styled from 'styled-components';
 
 const MainDiv = styled.div`
   padding: 0 1.2rem;
+  padding-bottom: 10rem;
   max-width: 75rem;
+  margin-top: 1rem;
+
   @media only screen and (min-width: 820px) {
     margin: auto;
     display: ${(props) => (props.emptyCart ? '#flex' : 'grid')};
